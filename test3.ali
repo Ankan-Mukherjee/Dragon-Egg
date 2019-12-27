@@ -1,0 +1,30 @@
+V "GNAT Lib v8"
+A -fplugin=./dragonegg.so
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV SPARK_05
+
+U test3%b		test3.adb		7680cf89 NE OO PK IL
+
+U test3%s		test3.ads		7da49b66 EE NE OO PK IL
+W obclib%s		obclib.adb		obclib.ali
+
+D obclib.ads		20191116102523 b2b9cd27 obclib%s
+D system.ads		20180111085525 4635ec04 system%s
+D test3.ads		20191116102523 cf1d5641 test3%s
+D test3.adb		20191116102523 b99d99c8 test3%b
+X 1 obclib.ads
+2K9*OBCLIB 17e11 3|1w6 2r6
+6F11*float32<short_float> 4|2r7 9r9
+X 3 test3.ads
+4K9*test3 8l5 8e10 4|1b14 12l5 12t10
+6U11*test31 4|5b11 10l5 10t11
+X 4 test3.adb
+2f1 a{1|6F11} 9m4
+2f3 b{1|6F11}
+3i1 c{short_integer} 8m4 9r17
+

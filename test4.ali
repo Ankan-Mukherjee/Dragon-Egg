@@ -1,0 +1,30 @@
+V "GNAT Lib v8"
+A -fplugin=./dragonegg.so
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV SPARK_05
+
+U test4%b		test4.adb		0e1a9b53 NE OO PK IL
+
+U test4%s		test4.ads		27e328c0 EE NE OO PK IL
+W obclib%s		obclib.adb		obclib.ali
+
+D obclib.ads		20191116102523 b2b9cd27 obclib%s
+D system.ads		20180111085525 4635ec04 system%s
+D test4.ads		20191116102523 955ae5e7 test4%s
+D test4.adb		20191223103206 9b407eb4 test4%b
+X 1 obclib.ads
+2K9*OBCLIB 17e11 3|1w6 2r6
+X 3 test4.ads
+4K9*test4 12l5 12e10 4|1b14 24l5 24t10
+8A9*F32Array1by3(integer)<integer> 4|9r6
+10U11*test41 10>20 10<36 4|6b11 22l5 22t11
+10i20 C{integer} 4|6b18 13r7
+10i36 O{integer} 4|6b34 21m4
+X 4 test4.adb
+7i1 I{integer} 14m7 17m7 21r12
+9a1 AB{3|8A9} 21r9
+
