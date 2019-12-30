@@ -2963,7 +2963,7 @@ void TreeToLLVM::EmitLandingPads() {
     // https://reviews.llvm.org/D10429
     LandingPadInst *LPadInst = Builder.CreateLandingPad(
         UnwindDataTy,
-#if LLVM_VERSION_CODE < LLVM_VERSION(3, 9)
+#if LLVM_VERSION_CODE < LLVM_VERSION(6, 0)
         DECL_LLVM(personality),
 #endif
         0, "exc");
